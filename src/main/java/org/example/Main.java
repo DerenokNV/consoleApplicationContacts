@@ -18,7 +18,7 @@ public class Main {
     String readString;
     while( ( readString = scanner.nextLine() ) != null ) {
 
-      ResultParsing res = (ResultParsing) analizScanner.parsingStringScanner( readString );
+      ResultParsing res = analizScanner.parsingStringScanner( readString );
       if ( res.isEnd() ) {
         break;
       }

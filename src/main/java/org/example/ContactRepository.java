@@ -16,7 +16,7 @@ public class ContactRepository {
   @Value("${save.file.path}")
   String uploadPath;
 
-  private List<ContactEntity> contacts;
+  private final List<ContactEntity> contacts;
 
   public ContactRepository() {
     contacts = new ArrayList<>();

@@ -11,12 +11,6 @@ public class ContactEntity {
   public ContactEntity() {
   }
 
-  public ContactEntity( String fullName, String phoneNumber, String email ) {
-    this.fullName = fullName;
-    this.phoneNumber = phoneNumber;
-    this.email = email;
-  }
-
   public void printInfo() {
     System.out.println( "Contact info: " + getInfoContact() );
   }

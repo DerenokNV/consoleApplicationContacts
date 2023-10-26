@@ -8,7 +8,7 @@ import java.io.*;
 @Profile("init")
 public class ContactInit {
 
-  private String initFilePath;
+  private final String initFilePath;
   private final AnalizScanner analizScanner;
   private final ContactRepository contactRepository;
 
@@ -26,7 +26,7 @@ public class ContactInit {
 
     File file = new File( initFilePath );
     try ( FileReader fr = new FileReader( file );
-          BufferedReader reader = new BufferedReader( fr ); ) {
+          BufferedReader reader = new BufferedReader( fr ) ) {
 
       String line = reader.readLine();
       while( line != null ) {
