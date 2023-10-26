@@ -1,0 +1,11 @@
+﻿spring:
+  profiles:
+    active: init
+
+save:
+  file:
+    path: src/main/resources/files
+
+init:
+  file:
+    path: src/main/resources/default-contacts.txt
